@@ -18,7 +18,7 @@ const App = () => {
       <div className="flex-1">
         <Routes>
           {/* <Route path="/login" element={<Login />} /> */}
-          <Route path="/" element={<Dashboard />} />
+          <Route path="Expence-Tracker" element={<Dashboard />} />
           <Route path="income" element={<Income />} />
           <Route path="expenses" element={<Expenses />} />
           <Route path="analytics" element={<Analytics />} />
