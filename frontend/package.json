@@ -1,8 +1,9 @@
 {
   "name": "expense-tracker",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://m-ibrahim182.github.io/Expence-Tracker",
   "scripts": {
     "lint": "eslint .",
     "preview": "vite preview",
