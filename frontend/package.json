@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://m-ibrahim182.github.io/Expence-Tracker",
+  "homepage": "https://m-ibrahim182.github.io/dashboard",
   "scripts": {
     "lint": "eslint .",
     "preview": "vite preview",
