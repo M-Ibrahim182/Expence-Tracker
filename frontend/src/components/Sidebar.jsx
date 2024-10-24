@@ -28,7 +28,7 @@ const Sidebar = () => {
 
 
                 <nav className="flex flex-col justify-start items-start  w-full">
-                    <Link to="/" className="flex items-center space-x-2 w-full transition-all py-3 px-3 hover:text-gray-400 rounded  hover:bg-gray-900">
+                    <Link to="/Expence-Tracker" className="flex items-center space-x-2 w-full transition-all py-3 px-3 hover:text-gray-400 rounded  hover:bg-gray-900">
                         <FaHome />
                         <span>Dashboard</span>
                     </Link>
