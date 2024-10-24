@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pcolor{
+    color: white;
+}
+.page_bg {
+
+    @apply bg-gray-800 w-[5/6vw] h-screen p-6;
+
+}
+
+.page_bg-inner {
+    @apply bg-gray-900 w-full h-full rounded p-4;
+}
+.button{
+    @apply bg-gray-400 rounded w-32 p-2;
+}
+
+.quickbutton{
+    @apply bg-gray-700 rounded-lg flex items-center p-6 space-x-7;
+}
+
+.list{
+    @apply font-bold flex justify-center w-1/6
+}
+.tag{
+    @apply font-bold flex justify-center w-1/5
+}
+.lable_input{
+    @apply text-white font-bold text-2xl
+}

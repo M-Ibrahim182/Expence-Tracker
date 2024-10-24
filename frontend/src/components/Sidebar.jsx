@@ -4,18 +4,25 @@ import images from '../assets/images';
 import { FaHome, FaWallet, FaChartBar, FaUser, FaMoneyBill } from 'react-icons/fa'; // Example icons
 
 const Sidebar = () => {
+    const userData = JSON.parse(localStorage.getItem('userData'));
+
     return (
         <div className="flex flex-col w-1/6 h-screen bg-gray-800 text-white items-center justify-between p-4">
             <div className='w-full space-y-10'>
-                <div className='flex flex-col justify-center items-center'>
+                <div className='flex flex-col justify-center space-y-6 items-center'>
 
                     <img
                         src={images.profile}
                         alt="Profile"
-                        className="w-25 rounded-full"
+                        className="w-48 rounded-full"
                     />
-                    <h2 className="text-lg font-semibold">User Name</h2>
-                </div>
+                    {userData ? (
+                        <div>
+                            <p className="text-lg font-semibold">{userData.name}</p>
+                        </div>
+                    ) : (
+                        <p className="text-lg font-semibold">No user data found.</p>
+                    )}                </div>
 
 
                 <nav className="flex flex-col justify-start items-start  w-full">
@@ -41,9 +48,9 @@ const Sidebar = () => {
                     </Link>
                 </nav>
             </div>
-            <Link to="/login" className='flex justify-center'>
+            {/* <Link to="/login" className='flex justify-center'>
                 <button className='button '>Log out</button>
-            </Link>
+            </Link> */}
 
         </div>
     );
