@@ -16,13 +16,15 @@ const Sidebar = () => {
                         alt="Profile"
                         className="w-48 rounded-full"
                     />
-                    {userData ? (
+                    
+                    {/* {userData ? (
                         <div>
                             <p className="text-lg font-semibold">{userData.name}</p>
                         </div>
                     ) : (
                         <p className="text-lg font-semibold">No user data found.</p>
-                    )}                </div>
+                    )}                */}
+                     </div>
 
 
                 <nav className="flex flex-col justify-start items-start  w-full">
@@ -42,10 +44,10 @@ const Sidebar = () => {
                         <FaChartBar />
                         <span>Analytics</span>
                     </Link>
-                    <Link to="/profile" className="flex items-center space-x-2 w-full transition-all py-3 px-3 hover:text-gray-400  rounded hover:bg-gray-900">
+                    {/* <Link to="/profile" className="flex items-center space-x-2 w-full transition-all py-3 px-3 hover:text-gray-400  rounded hover:bg-gray-900">
                         <FaUser />
                         <span>Profile</span>
-                    </Link>
+                    </Link> */}
                 </nav>
             </div>
             {/* <Link to="/login" className='flex justify-center'>
